@@ -1,6 +1,6 @@
 # Laravel DaData
 
-Пакет работы с сервисом [DaData.ru]https://dadata.ru, для исправления синтаксических ошибок в информации контактных данных клиентов сайта и вывода подсказок поля форм.
+Пакет работы с сервисом [DaData.ru](https://dadata.ru/?ref=﻿58539), для исправления синтаксических ошибок в информации контактных данных клиентов сайта и вывода подсказок поля форм.
 
 ## Установка
 
@@ -91,8 +91,5 @@ $response = DadataClean::getStatistics('2019-11-01');
 ```
 
 ## Ссылки, документация, API:
-- https://dadata.ru
-- https://dadata.ru/api/clean
-- https://confluence.hflabs.ru/display/SGTDOC172/REST+API
-- https://gist.github.com/algenon/affa3f9fc7b665ab7744573455abe18d
+- [https://dadata.ru](https://dadata.ru/?ref=﻿58539)
 - https://github.com/gietos/dadata
