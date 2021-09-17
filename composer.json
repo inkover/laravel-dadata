@@ -1,5 +1,5 @@
 {
-    "name": "fomvasss/laravel-dadata",
+    "name": "inkover/laravel-dadata",
     "description": "Dadata API client (https://dadata.ru)",
     "keywords": ["laravel", "dadata", "autocomplete"],
     "type": "package",
@@ -9,6 +9,11 @@
             "role": "Developer",
             "name": "Fomin Vasyl",
             "email": "fomvasss@gmail.com"
+        },
+        {
+            "role": "Developer",
+            "name": "Nikita Yurkin",
+            "email": "yurkin.nikita@gmail.com"
         }
     ],
     "require": {
