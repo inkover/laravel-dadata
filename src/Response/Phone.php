@@ -39,6 +39,12 @@ class Phone extends AbstractResponse
      */
     const QC_REGION_MISMATCH = 3;
 
+    const TYPE_MOBILE = 'Мобильный'; // +7 911 243-45-68
+    const TYPE_FIXED = 'Стационарный'; // +7 495 456-55-77
+    const TYPE_DIRECT = 'Прямой мобильный'; // +7 495 243-45-68
+    const TYPE_CALL_CENTER = 'Колл-центр'; // 8 800 222-12-22
+    const TYPE_UNKNOWN = 'Неизвестный'; // +7 333 1111112
+
     /**
      * @var string Исходный телефон одной строкой
      */
@@ -75,14 +81,24 @@ class Phone extends AbstractResponse
     public $extension;
 
     /**
-     * @var string Оператор связи
+     * @var string Оператор связи (только для России)
      */
     public $provider;
 
     /**
-     * @var string Регион
+     * @var string Страна
+     */
+    public $country;
+
+    /**
+     * @var string Регион (только для России)
      */
     public $region;
+
+    /**
+     * @var string Город (только для стационарных телефонов)
+     */
+    public $city;
 
     /**
      * @var string Часовой пояс

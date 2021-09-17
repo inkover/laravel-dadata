@@ -206,9 +206,14 @@ class Address extends AbstractResponse
     public $country;
     
     /**
-     * @var string Cтрана iso alfa2
+     * @var string Страна iso alfa2
      */
     public $country_iso_code;
+
+    /**
+     * @var string Федеральный округ
+     */
+    public $federal_district;
 
     /**
      * @var string Код ФИАС региона
@@ -219,6 +224,11 @@ class Address extends AbstractResponse
      * @var string Код КЛАДР региона
      */
     public $region_kladr_id;
+
+    /**
+     * @var string ISO-код региона
+     */
+    public $region_iso_code;
 
     /**
      * @var string Регион с типом
@@ -484,6 +494,11 @@ class Address extends AbstractResponse
     public $fias_level;
 
     /**
+     * @var integer  	Признак актуальности адреса в ФИАС (0 — актуальный, 1-50 — переименован, 51 — переподчинен, 99 — удален)
+     */
+    public $fias_actuality_state;
+
+    /**
      * @var string Код КЛАДР
      */
     public $kladr_id;
@@ -559,6 +574,11 @@ class Address extends AbstractResponse
      * @var string Нераспознанная часть адреса. Для адреса
      */
     public $unparsed_parts;
+
+    /**
+     * @var array Список ближайших станций метро (до трёх штук)
+     */
+    public $metro;
 
     public function __toString()
     {

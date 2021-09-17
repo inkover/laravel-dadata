@@ -32,7 +32,12 @@ class Email extends AbstractResponse
      * Исправлены опечатки
      */
     const QC_CORRECTED = 4;
-    
+
+    const TYPE_PERSONAL = 'PERSONAL'; // личный (@mail.ru, @yandex.ru)
+    const TYPE_CORPORATE = 'CORPORATE'; // корпоративный (@myshop.ru)
+    const TYPE_ROLE = 'ROLE'; // «ролевой» (info@, support@)
+    const TYPE_DISPOSABLE = 'DISPOSABLE'; // одноразовый (@temp-mail.ru)
+
     /**
      * @var string Исходный email
      */
@@ -42,6 +47,15 @@ class Email extends AbstractResponse
      * @var string Стандартизованный email
      */
     public $email;
+
+    /** @var string Локальная часть адреса (то, что до «собачки») */
+    public $local;
+
+    /** @var string Домен (то, что после «собачки»)  */
+    public $domain;
+
+    /** @var string Тип адреса */
+    public $type;
 
     public function __toString()
     {
